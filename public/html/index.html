@@ -1,0 +1,71 @@
+<DOCTYPE HTML> 
+    <html>
+      <head>
+        <title>IMG-to-PDF Converter</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="convert any set of images to PDFs">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel='stylesheet' href='../stylesheets/style.css' />
+        <link rel='stylesheet' href='../stylesheets/index.css' />
+        <link rel='stylesheet' href='../stylesheets/footer.css' />
+        <link rel="icon" href="../images/pdf.png">
+
+      </head>
+      <body>
+        <main>
+            <div class="navbar">
+                    <div>
+                        <h1 class="heading"><a href='/'>IMG➡️PDF</a></h1>
+                    </div>
+                    <div class="button-set"> 
+                        <button class="button-login" role="button">Login</button>
+                        <button class="button-signup" role="button">Signup</button>
+                    </div>
+            </div>
+
+          <article>
+            <p class='title'>Convert your jpeg and png Images to pdf </p>
+
+            <form method='post' action='/upload' enctype='multipart/form-data'>
+              <input class="file-upload" id='file-upload' type='file' name='images' accept='.png, .jpg' multiple/>
+
+              <p><label for='file-upload'>Select files</label></p>
+
+              <p id='selected-files'><code> </code> </p>
+
+              <p><input type='submit' value='upload' /></p>
+
+            </form>
+
+          </article>
+
+            <footer class="footer-section">
+                <div class="copyright-area">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                                <div class="copyright-text">
+                                    <p>copyright © IMG2PDF 2023</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                                <div class="footer-menu">
+                                    <ul>
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">Terms</a></li>
+                                        <li><a href="#">Privacy</a></li>
+                                        <li><a href="#">Policy</a></li>
+                                        <li><a href="#">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        
+          
+         <script src='../javascripts/index.js'></script>
+        </main>
+      </body>
+    </html>

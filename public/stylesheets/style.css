@@ -1,8 +1,117 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+.navbar{
+
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+
 }
 
-a {
-  color: #00B7FF;
+.heading{
+  padding-top: 8px;
+  padding-left: 20px;
+  text-decoration: none;
+
+}
+
+.button-set{
+
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  padding: 30px;
+  gap: 20px;
+}
+/* CSS */
+.button-signup {
+  background-color: initial;
+  background-image: linear-gradient(-180deg, #FF7E31, #E62C03);
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,-apple-system,system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
+  height: 40px;
+  line-height: 40px;
+  outline: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 100%;
+  z-index: 9;
+  border: 0;
+  transition: box-shadow .2s;
+}
+
+.button-signup:hover {
+  box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
+}
+
+/* CSS */
+.button-login {
+  background-color: #FFFFFF;
+  border: 0;
+  border-radius: .5rem;
+  box-sizing: border-box;
+  color: #111827;
+  font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  height: 40px;
+  line-height: 40px;
+  outline: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  text-align: center;
+  text-decoration: none #D1D5DB solid;
+  text-decoration-thickness: auto;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  z-index: 9;
+  width: 100%;
+}
+
+.button-login:hover {
+  background-color: rgb(249,250,251);
+}
+
+.button-login:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.button-login:focus-visible {
+  box-shadow: none;
+}
+
+.title{
+  font-size: 30px;
+  font-weight: bold;
+  color: #FF7E31;
+  display: flex;
+  justify-content: center;
+}
+
+.file-upload{
+  
+  color: red;
+}
+
+
+
+.footer-menu ul li a {
+  text-decoration: none;
+   /* Adjust this color as needed */
+}
+
+.footer-menu ul li a:hover {
+  text-decoration: underline;
 }
